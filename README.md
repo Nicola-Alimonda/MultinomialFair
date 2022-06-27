@@ -1,0 +1,24 @@
+# MultinomialFair
+
+I pacchetti utilizzati sono disponibili in requirements.txt
+
+Le prove sono eseguibili dallo script test.py
+
+Nella cartella Minimum Target Tables troviamo i target minimi per garantire
+la fairness per la distribuzione multinomiale binomiale
+
+Nella cartella Plots troviamo i grafici delle distribuzioni delle classi per Score e
+gli scatterplot dello score paragonato alla posizione del rank pre e post optimization
+
+Nella cartella Ranking troviamo i dataframe post_opt_dataset che valuta individuo per individuo la
+differenza nell'utilità*, la vecchia k posizione contro la nuova k posizione
+ 
+(*In particolare le differenze dell'utilità individuo per individuo
+vengono calcolate attraverso una differenza tra lo stesso individuo
+(pre e post rank {colonna: Utility_Loss_individual_perc	};
+e vengono calcolate attraverso una differenza tra l'individuo che occupa la posizione post opt
+e l'individuo che occupava quella posizione pre-opt {colonna:Utility_Loss_position_perc})
+
+
+Sempre nella cartella Ranking possiamo trovare lo stesso dataframe che mostra
+solo le utilità ma aggregato per classi {colonna:Group}
