@@ -22,3 +22,12 @@ e l'individuo che occupava quella posizione pre-opt {colonna:Utility_Loss_positi
 
 Sempre nella cartella Ranking possiamo trovare lo stesso dataframe che mostra
 solo le utilità ma aggregato per classi {colonna:Group}
+
+
+
+# Greedy Wise Score
+
+
+All'interno della repository GWS troviamo Greedy_Wise_Score.py e Greedy_Wise_Utility.py, 
+che contengono il codice per lanciare i nostri algoritmi.
+Dentro il notebook greedy wise Score invece sono presenti tutti i test effettuati e i grafici generati.
