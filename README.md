@@ -24,7 +24,7 @@ Python version: `3.8.10`
 
 To reprocuce the experiments run:
 ```
-python test.py
+python multinomialFair\test.py
 ```
 In the folder `Minimum Target_tables` there are the minimum targets to ensure correctness for the binomial multinomial distribution.
 
@@ -44,6 +44,6 @@ With this work we propose a greedy extenstion of the previous algorithm.
 Inside the Greedy-Wise-Score folder you can run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
 
 ```
-python Greedy_Wise_Score.py 
-python Greedy_Wise_Utility.py
+python Greedy-Wise-Score\Greedy_Wise_Score.py 
+python Greedy-Wise-Score\Greedy_Wise_Utility.py
 ```
