@@ -7,9 +7,10 @@ Repository of experiments for a Fair Top-k Ranking problem.
 To know more about this research work, please refer to:
 
 - Zehlike, Meike, et al. "Fa* ir: A fair top-k ranking algorithm." Proceedings of the 2017 ACM on Conference on Information and Knowledge Management. 2017.
+- Alimonda, Nicola, et al. "Preserving Utility in Fair Top-k Ranking with Intersectional Bias." Working in progress. 2023.
 
 
-### Using the biased dataset generator
+### Using the fair ranking algorithm
 Clone repo and install packages:
 ```
 git clone https://github.com/Nicola-Alimonda/MultinomialFair
@@ -19,7 +20,7 @@ pip install -r requirements.txt
 
 Python version: `3.8.10`
 
-### Run the experiments
+### Run FA*IR
 
 To reprocuce the experiments run:
 ```
@@ -39,10 +40,6 @@ Notice that individual utility differences are calculated through (1) a differen
 
 ### Greedy Wise Score
 With this work we propose a greedy extenstion of the previous algorithm.
-
-To know more about this research work, please refer to our paper:
-
-- Alimonda, Nicola, et al. "Preserving Utility in Fair Top-k Ranking with Intersectional Bias." Working in progress. 2023.
 
 Inside the Greedy-Wise-Score folder you can run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
 
