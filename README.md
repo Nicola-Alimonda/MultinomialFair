@@ -1,33 +1,52 @@
 # MultinomialFair
+Repository of experiments for a Fair Top-k Ranking problem.
 
-I pacchetti utilizzati sono disponibili in requirements.txt
+> ### Authors & contributors:
+> Nicola Alimonda, Alessandro Castelnovo, Riccardo Crupi
 
-Le prove sono eseguibili dallo script test.py
+To know more about this research work, please refer to:
 
-Nella cartella Minimum Target Tables troviamo i target minimi per garantire
-la fairness per la distribuzione multinomiale binomiale
-
-Nella cartella Plots troviamo i grafici delle distribuzioni delle classi per Score e
-gli scatterplot dello score paragonato alla posizione del rank pre e post optimization
-
-Nella cartella Ranking troviamo i dataframe post_opt_dataset che valuta individuo per individuo la
-differenza nell'utilità*, la vecchia k posizione contro la nuova k posizione
- 
-(*In particolare le differenze dell'utilità individuo per individuo
-vengono calcolate attraverso una differenza tra lo stesso individuo
-(pre e post rank {colonna: Utility_Loss_individual_perc	};
-e vengono calcolate attraverso una differenza tra l'individuo che occupa la posizione post opt
-e l'individuo che occupava quella posizione pre-opt {colonna:Utility_Loss_position_perc})
+- Zehlike, Meike, et al. "Fa* ir: A fair top-k ranking algorithm." Proceedings of the 2017 ACM on Conference on Information and Knowledge Management. 2017.
 
 
-Sempre nella cartella Ranking possiamo trovare lo stesso dataframe che mostra
-solo le utilità ma aggregato per classi {colonna:Group}
+### Using the biased dataset generator
+Clone repo and install packages:
+```
+git clone https://github.com/Nicola-Alimonda/MultinomialFair
+cd multinomialFair
+pip install -r requirements.txt
+```
+
+Python version: `3.8.10`
+
+### Run the experiments
+
+To reprocuce the experiments run:
+```
+python test.py
+```
+In the folder `Minimum Target_tables` there are the minimum targets to ensure correctness for the binomial multinomial distribution.
+
+In `Plots` folder there are the plots of the distributions of the classes by Score and the scatterplots of the score compared to the position of the pre and post optimization rank.
+
+In the `Ranking folder` we find the dataframe post_opt_dataset which evaluates the difference in utility*, the old k position against the new k position, per each individual. Moreover, there is the same dataframe that shows only the utilities but aggregated by class {column: Group}.
+
+<img src="https://user-images.githubusercontent.com/92302358/220327881-52c5acc0-0a92-418d-a3e8-d26b921c8839.png" width="600" height="600">
+
+Notice that individual utility differences are calculated through (1) a difference between the same individual (pre and post rank {column: Utility_Loss_individual_perc }, 
+(2) and calculated through a difference between the individual who occupies the post opt position and the individual who occupied that position pre-opt {column:Utility_Loss_position_perc}.
 
 
+### Greedy Wise Score
+With this work we propose a greedy extenstion of the previous algorithm.
 
-# Greedy Wise Score
+To know more about this research work, please refer to our paper:
 
+- Alimonda, Nicola, et al. "Preserving Utility in Fair Top-k Ranking with Intersectional Bias." Working in progress. 2023.
 
-All'interno della repository GWS troviamo Greedy_Wise_Score.py e Greedy_Wise_Utility.py, 
-che contengono il codice per lanciare i nostri algoritmi.
-Dentro il notebook greedy wise Score invece sono presenti tutti i test effettuati e i grafici generati.
+Inside the Greedy-Wise-Score folder you can run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
+
+```
+python Greedy_Wise_Score.py 
+python Greedy_Wise_Utility.py
+```
