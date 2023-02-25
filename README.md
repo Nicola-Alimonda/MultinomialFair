@@ -41,7 +41,7 @@ Notice that individual utility differences are calculated through (1) a differen
 ### Greedy Wise Score
 With this work we propose a greedy extenstion of the previous algorithm.
 
-Inside the Greedy-Wise-Score folder you can run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
+Inside the Greedy-Wise-Score folder you find packages used to run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
 
 ```
 python Greedy-Wise-Score\Greedy_Wise_Score.py 
