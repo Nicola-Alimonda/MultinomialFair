@@ -34,16 +34,21 @@ In the `Ranking folder` we find the dataframe post_opt_dataset which evaluates t
 
 <img src="https://user-images.githubusercontent.com/92302358/220327881-52c5acc0-0a92-418d-a3e8-d26b921c8839.png" width="600" height="600">
 
-Notice that individual utility differences are calculated through (1) a difference between the same individual (pre and post rank {column: Utility_Loss_individual_perc }, 
+Notice that individual utility differences are calculated through (1) a difference between the same individual (pre and post rank {column: Utility_Loss_individual_perc },
 (2) and calculated through a difference between the individual who occupies the post opt position and the individual who occupied that position pre-opt {column:Utility_Loss_position_perc}.
 
 
 ### Greedy Wise Score
 With this work we propose a greedy extenstion of the previous algorithm.
 
-Inside the Greedy-Wise-Score folder you find packages used to run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the greedy wise Score notebook, on the other hand, there are all the tests carried out and the plots generated.
+Inside the Greedy-Wise-Score folder you find packages used to run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the Greedy multinomial Fair-Copy1.ipynb notebook, on the other hand, there are all the tests carried out and the plots generated.
 
 ```
 python Greedy-Wise-Score\Greedy_Wise_Score.py 
 python Greedy-Wise-Score\Greedy_Wise_Utility.py
 ```
+
+Under Analisi di sensitività congiunta per alpha e L, inside the notebook, is possible to set initialization parameter such as k (lenght of the ranking), p (given proportions of each protected group), and attribute for the number of protected groups.
+
+Dataframe df_res returns all possible combinations of ranking with given parameter and the obtained kendal-tau metric for each ranking.
+In dataframe exposureDf is possible to see average exposure for each group G. 
