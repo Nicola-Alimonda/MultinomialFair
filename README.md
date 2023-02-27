@@ -43,7 +43,7 @@ With this work we propose a greedy extension of the previous algorithm.
 
 Inside the Greedy-Wise-Score folder you find packages used to run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the Greedy multinomial Fair-Copy1.ipynb notebook, on the other hand, there are all the tests carried out and the plots generated.
 
-Under Sensitivity analysis for L parameter is possible to observe plots about average exposure and kendal-tau at Loss parameter variation, noticing that optimal Kendal-tau do not lay for L=1 
+Under `Sensitivity analysis for L parameter` is possible to observe plots about average exposure and kendal-tau at Loss parameter variation, noticing that optimal Kendal-tau do not lay for L=1 
 
 Under `Sensitivity analysis for L and alpha_t parameter`, inside the notebook, is possible to set initialization parameter such as k (lenght of the ranking), p (given proportions of each protected group), and attribute for the number of protected groups.
 
