@@ -48,7 +48,7 @@ python Greedy-Wise-Score\Greedy_Wise_Score.py
 python Greedy-Wise-Score\Greedy_Wise_Utility.py
 ```
 
-Under Analisi di sensitività congiunta per alpha e L, inside the notebook, is possible to set initialization parameter such as k (lenght of the ranking), p (given proportions of each protected group), and attribute for the number of protected groups.
+Under `Analisi di sensitività congiunta per alpha e L`, inside the notebook, is possible to set initialization parameter such as k (lenght of the ranking), p (given proportions of each protected group), and attribute for the number of protected groups.
 
 Dataframe df_res returns all possible combinations of ranking with given parameter and the obtained kendal-tau metric for each ranking.
 In dataframe exposureDf is possible to see average exposure for each group G. 
