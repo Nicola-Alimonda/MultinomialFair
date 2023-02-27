@@ -39,7 +39,7 @@ Notice that individual utility differences are calculated through (1) a differen
 
 
 ### Greedy Wise Score
-With this work we propose a greedy extenstion of the previous algorithm.
+With this work we propose a greedy extension of the previous algorithm.
 
 Inside the Greedy-Wise-Score folder you find packages used to run Greedy_Wise_Score.py and Greedy_Wise_Utility.py. Inside the Greedy multinomial Fair-Copy1.ipynb notebook, on the other hand, there are all the tests carried out and the plots generated.
 
