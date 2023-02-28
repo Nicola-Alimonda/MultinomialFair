@@ -50,3 +50,11 @@ Under `Sensitivity analysis for L and alpha_t parameter`, inside the notebook, i
 Dataframe df_res, obtained at the bottom of the notebook, returns all possible combinations of ranking with given parameter and the obtained kendal-tau metric for each ranking. This dataframe give a view of which are the best parameters to set in order to obtain the bests rankings.
 
 In exposureDf.xlsx file is possible to observe average exposure for each group G, in order to check if fairness across groups is respected. 
+
+To run the tests without opening ipynb:
+```
+cd Greedy-Wise-Score
+python Greedy_Wise_ScoreTest.py
+```
+
+Inside Plot folder is possible to find all visualizations inside the notebook.
