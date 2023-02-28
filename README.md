@@ -57,4 +57,4 @@ cd Greedy-Wise-Score
 python Greedy_Wise_ScoreTest.py
 ```
 
-Inside Plot folder is possible to find all visualizations inside the notebook.
+In Plot folder is possible to find all visualizations inside the notebook.
