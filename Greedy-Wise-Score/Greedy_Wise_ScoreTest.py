@@ -954,7 +954,7 @@ for row, row1, row2 in zip(df_res['ExposureByGroups'], df_res['alphaByGroups'], 
 exposureDf = pd.DataFrame(exposureData)
 
 # exposureDf.to_csv('exposureDf.csv')
-exposureDf.to_excel('exposureDf.xlsx')
+exposureDf.to_csv('exposureDf.csv')
 
 
 
@@ -968,6 +968,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import t
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib.colors import ListedColormap
+
 fig = plt.figure(figsize=(20,20))
 ax = fig.add_subplot(projection='3d')
 
